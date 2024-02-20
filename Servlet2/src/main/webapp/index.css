@@ -1,0 +1,13 @@
+*{
+    text-align: center;
+}
+form{
+    border: 1px solid;
+    margin: 15px auto;
+    padding: 0;
+    width: 500px;
+    height: 500px;
+}
+div{
+    padding: 15px 30px;
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servlet 복습 프로젝트</title>
+
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     
@@ -13,7 +15,45 @@
 
     <form action="/ex1" method="get">
 
+        <div>
+            피자 선택 :
+        <select name="menu">
+            <option value="치즈피자">치즈피자(10000)</option>
+            <option value="고구마피자">고구마피자(13000)</option>
+            <option value="포테이토피자">포테이토피자(15000)</option>
+            </option>
+        </select>
+        </div>
+
+        <div>
+            도우선택 : 
+            <input type="radio" name="type" value="일반도우"> 일반도우 (+0)
+            <input type="radio" name="type" value="씬도우"> 씬도우 (+1500) 
+            <input type="radio" name="type" value="프리미엄도우"> 프리미엄도우 (+2000)
+        </div>
         
+        <div>
+            토핑 선택 :
+            <input type="checkbox" name="topping" value="치즈추가">치즈추가 (+1000)
+            <input type="checkbox" name="topping" value="올리브추가">올리브추가 (+1500)
+            <input type="checkbox" name="topping" value="토핑추가">토핑추가 (+2000)
+            </div>
+
+            <div>
+            기타옵션 :
+            <input type="checkbox" name="opt" value="콜라추가">콜라추가 (+2000)
+            <input type="checkbox" name="opt" value="소스추가">소스추가 (+1500)
+            <input type="checkbox" name="opt" value="콜라추가">사이즈추가 (+10000)
+    
+        </div>
+        <div>       
+            주문자명 : <input type="text" name="name">
+        </div>
+        <div>
+            주소 : <input type="text" name="address">
+    
+        </div>
+        <button type="submit">주문</button>
     </form>
 </body>
 </html>
