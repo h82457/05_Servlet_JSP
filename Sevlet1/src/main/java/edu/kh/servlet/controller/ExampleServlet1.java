@@ -28,7 +28,7 @@ public class ExampleServlet1 extends HttpServlet{
 		/* 요청에 담긴 특정 Parameter 얻어오기 */
 //		- String HttpServletRequest.getParameter("name속성값")
 		
-		// <input name="inputName">에 작성되어 제출된 값 얻어오기, String으로만 전송
+		// <input name="inputName">에 작성되어 제출된 값 얻어오기, 전달되는 자료값은 String 형태
 		String inputName = req.getParameter("inputName");
 		String inputAge = req.getParameter("inputAge");
 		
@@ -73,9 +73,5 @@ public class ExampleServlet1 extends HttpServlet{
 		
 		// sb에 누적된 html 코드 스트림을 이용해서 출력
 		out.print(sb.toString());
-		
 	}
-	
-
-	
 }
