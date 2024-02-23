@@ -19,13 +19,13 @@ public class ScopeServlet extends HttpServlet{
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		
 		 /* Servlet/JSP 내장 객체와 범위 */
-//		 범위별 내장 객체를 얻어와 여러 값을 세팅, 확인 테스트
+//			- 범위별 내장 객체를 얻어와 여러 값을 세팅, 확인 테스트
 		 
 		 // 1. page socpe -> JSP 확인
 		 
 		 // 2. request scope (== httpServletRequest)
-//		 	ㄴ 요청 받은 Servlet/JSP + 위임 받은 Servlet.JSP 에서 유지
-//		 		(위임이 계속되면 request도 계속 유지)
+//		 		ㄴ 요청 받은 Servlet/JSP + 위임 받은 Servlet.JSP 에서 유지
+//		 			(위임이 계속되면 request도 계속 유지)
 		 
 		req.setAttribute("requestMessage", "request scope 입니다.");
 		
@@ -62,7 +62,7 @@ public class ScopeServlet extends HttpServlet{
 		
 		// 모든 범위에 같은 key로 속성 추가
 		req.setAttribute("str", "REQUEST");
-		req.setAttribute("str", "SESSION");
+		req.setAttribute("str", "SESSTION");
 		req.setAttribute("str", "APPLICATION");
 		
 //		 ---------------------
