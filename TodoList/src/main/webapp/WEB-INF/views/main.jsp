@@ -12,7 +12,9 @@
 						
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <!-- 												ㄴ> function : 길이 자르기, 나누기 -->
+
 <!-- 1. 완료 여부 수정 2.할일 삭제 3. 할일 제목/내용 수정 -->
+
 <!DOCTYPE html>
 <html>
 <head>
